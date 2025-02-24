@@ -1,0 +1,264 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.img-1 {
+    position: relative;
+    border-radius: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+.img-2 {
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    border-radius: 10px;
+    max-width: 70%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container::before,
+.image-container::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background-color: blue;
+}
+
+.image-container::before {
+    top: 10px;
+    right: -10px;
+}
+
+.image-container::after {
+    bottom: -10px;
+    left: -10px;
+}
+
+.faq-container {
+    padding: 20px;
+}
+
+.faq details {
+    margin-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+    color: rgba(51, 51, 51, 0.7); 
+}
+
+.faq-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+.highlight {
+    color: #1545f1;
+    font-weight: bold;
+}
+
+.faq {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .img-2 {
+        left: 20px; 
+        bottom: -20px;
+        max-width: 80%;
+    }
+}
+details {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::after {
+    content: "+";
+    font-size: 18px;
+    font-weight: bold;
+    color: #1545f1;
+    margin-left: 10px;
+}
+
+details[open] summary::after {
+    content: "-";
+}
+
+details p {
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.video-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.section-heading .subtitle {
+    font-size: 18px;
+    color: #666;
+}
+.section-heading .title {
+    font-size: 36px;
+    color: #2E2C39;
+}
+  
+.section-heading .title span {
+    color: #1545F1;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    flex: 1 1 calc(50% - 10px); /* Two columns on larger screens */
+    max-width: calc(50% - 10px); /* Ensure two cards per row */
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive: Stack cards on smaller screens */
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.testimonial-info {
+    flex: 1;
+}
+
+.testimonial-info .name {
+    font-size: 21px;
+    font-weight: 600;
+    color: #2E2C39;
+    margin-bottom: 5px;
+}
+
+.testimonial-info .role {
+    font-size: 16px;
+    color: #1545F1;
+}
+
+.quote-icon svg {
+    width: 44px;
+    height: 33px;
+    fill: #1545F1;
+}
+
+.testimonial-content .quote {
+    font-size: 18px;
+    color: #2E2C39;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    font-size: 17px;
+    color: #FFC42D;
+}
+
+.star-rating .star {
+    margin-right: 5px;
+}
+
+.star-rating .star:last-child {
+    color: #DBDBDB;
+}
+
+/* Center align on smaller screens */
+@media (max-width: 480px) {
+
+    .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 auto 10px;
+    }
+
+    .testimonial-info .name,
+    .testimonial-info .role {
+        text-align: center;
+    }
+}
