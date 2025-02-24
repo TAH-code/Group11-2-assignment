@@ -1,0 +1,135 @@
+.planbody { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+
+.txc {
+    color: #ffffff;
+}
+#starter{
+    background-color: #1545F1;
+}
+.price{    background-color:#7c94ff4a;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    padding: 15px 0px 15px 0px;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: #1545F1;
+    text-align: center;
+}
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pricing-table {
+    display: flex;
+    flex-direction: column; /* Change from row to column */
+    align-items: center; /* Center the items */
+    width: 80%;
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.pricing-plan {
+    text-align: center;
+    padding: 65px 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 25%;
+
+    margin: 0 20px; 
+}
+
+.pricing-plan h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #333;
+}
+
+.pricing-plan p {
+    font-size: 16px;
+    color: #666;
+}
+
+.pricing-plan .price {
+    font-size: 25px;
+    color: #1545F1;
+    margin: 30px  0;
+}
+#mdprice{
+color: #ffffff;
+}
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    margin: 15px 0;
+    font-size: 18px;
+    font-family: "Open Sans", Sans-serif;
+}
+
+.pricing-plan button {
+    background-color: #1545F1;
+    color: #fff;
+    border: none;
+    padding: 21px 40px 21px 40px;
+    border-radius: 6px 6px 6px 6px;
+    cursor: pointer;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0px;
+
+    margin: 34px;
+}
+#mdbtn{
+    background-color: #fff;
+    color:#1545F1;
+}
+.pricing-plan button:hover {
+    background-color: #0056b3;
+}
+#mdh2{
+    color: #ffffff;
+}
+    @media (max-width: 768px) {
+        .pricing-plan {
+            width: 80%; 
+        }
+        .planbody{
+            display: contents;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .pricing-plan {
+            width: 90%; 
+        }
+        .planbody{
+            display: contents;
+        }
+    }
